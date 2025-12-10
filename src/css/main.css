@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: blue;
 }
 
 a {
@@ -12,4 +11,217 @@ a {
 img,
 video {
   display: block;
+}
+
+body {
+  background-image: url(../img/background-homepage-image.jpg);
+  background-attachment: fixed;
+  font-family: maxular, serif;
+  font-weight: 300;
+  color: white;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 514px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 80px;
+  text-transform: uppercase;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  width: 90%;
+}
+
+header img {
+  height: 80px;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-element {
+  padding: 13px 26px 16px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5;
+  text-decoration: none;
+  height: fit-content;
+}
+.black-button {
+  background-color: black;
+  color: white;
+}
+
+.titre {
+  font-family: swiss-721-bt-outline, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 8vw;
+  font-weight: 900;
+  padding-top: 90px;
+  position: relative;
+  z-index: 10;
+}
+
+.plein-titre {
+  font-family: swiss-721-bt, sans-serif;
+  font-weight: 900;
+}
+
+.citation {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 5px;
+}
+
+.citation-container {
+  display: flex;
+  justify-content: center;
+  padding: 200px 0;
+  margin-top: 35vw;
+}
+
+.citation h2 {
+  font-family: swiss-721, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.album-recent img {
+  height: 407px;
+}
+
+.sorties-recentes-albums {
+  display: flex;
+  gap: 30px;
+}
+
+.section-nos-sorties-recentes {
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px;
+  gap: 40px;
+}
+
+.section-artists {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 90%,
+    #9b000000 90%
+  );
+}
+
+.artist-card {
+  display: flex;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 max(80px, 5%);
+  max-width: 1277px;
+}
+
+.artist-card img {
+  object-fit: cover;
+  width: 50%;
+  flex: 1 1 50%;
+}
+
+.image-right {
+  flex-direction: row-reverse;
+}
+
+.image-right .artist-card-content {
+  margin: auto 70px auto 0;
+}
+
+.artist-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto 0 auto 70px;
+  color: black;
+  flex: 1 1 50%;
+}
+
+.artist-card-content p {
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.artist-card-content h1 {
+  font-family: swiss-721-bt-outline, sans-serif;
+  text-transform: uppercase;
+  font-size: 54px;
+}
+
+.bouton-decouvrir-artiste {
+  border: solid rgb(0, 0, 0) 2px;
+  border-radius: 25px;
+  width: fit-content;
+  height: fit-content;
+  padding: 12px 25px 15px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.background-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: absolute;
+}
+
+.background-grid video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.bouton-decouvrir-artiste:hover {
+  background-color: orangered;
+  border: solid black 2px;
+}
+
+.section-all-albums {
+  margin: 0 80px;
+}
+
+.all-albums {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-albums img {
+  height: 320;
+}
+
+.qui-sommes-nous {
+  margin-top: -80px;
+  width: 829px;
+}
+
+footer {
+  background-color: black;
+}
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
 }
