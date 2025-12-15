@@ -19,7 +19,7 @@ body {
   font-family: maxular, serif;
   font-weight: 300;
   color: white;
-  width: 100vw;
+
   overflow-x: hidden;
 }
 
@@ -293,7 +293,6 @@ section h2 {
 
 footer {
   background-color: black;
-
   font-size: 16px;
 }
 
@@ -457,4 +456,74 @@ form button {
 form button:hover {
   color: #e65828;
   border: solid #e65828;
+}
+
+@media (max-width: 430px) {
+  body {
+    font-size: 10px;
+  }
+  main {
+    gap: 20px;
+  }
+
+  header {
+    margin: 20px 20px;
+    z-index: 999;
+    width: 50%;
+  }
+
+  header img {
+    height: 30px;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 5px;
+  }
+  .nav-element {
+    padding: 7px 10px 8px;
+    font-size: 8px;
+  }
+  .citation-container {
+    padding: 20px 0;
+  }
+
+  .citation h2 {
+    font-size: 20px;
+  }
+
+  .artist-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .artist-card img {
+    object-fit: cover;
+    width: 100vw;
+    flex: 1 1 50%;
+  }
+  .image-right {
+    flex-direction: column;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+  footer img {
+    height: 30px;
+  }
+  footer h3 {
+    font-size: 8px;
+  }
+  .columns-container {
+    padding: 60px 10px;
+  }
+
+  .artist-hero {
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .artist-hero img {
+    height: auto;
+  }
 }
